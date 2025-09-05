@@ -1,0 +1,57 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Práctico KYC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="kyc-widget-container">
+
+        <div id="gate-section">
+            <h2>Pon a Prueba tu Instinto de Analista</h2>
+            <p>Regístrate para desbloquear un ejercicio práctico y descubrir si tienes lo necesario para detectar operaciones de riesgo.</p>
+            
+            <form id="lead-form">
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <input type="tel" id="telefono" placeholder="Teléfono">
+                <button type="submit">Comenzar Ejercicio</button>
+                <p id="form-status"></p>
+            </form>
+        </div>
+
+        <div id="exercise-section" class="hidden">
+            
+            <div id="case-section">
+                <img src="https://thispersondoesnotexist.com/" alt="Foto de perfil ficticia">
+                <h3>Caso: Sofía Elizondo Correa</h3>
+                <ul>
+                    <li><strong>Domicilio:</strong> Tijuana, Baja California (Zona de Alto Riesgo).</li>
+                    <li><strong>Perfil:</strong> Apoderada legal de "Textiles del Noroeste S.A. de C.V.".</li>
+                    <li><strong>Actividad Clave:</strong> Solicita un crédito de $5M MXN. Es cónyuge de un funcionario público local (PEP).</li>
+                </ul>
+                <div class="risk-options">
+                    <strong>¿Cuál es el nivel de riesgo principal?</strong>
+                    <button class="option-btn" data-answer="bajo">Bajo</button>
+                    <button class="option-btn" data-answer="medio">Medio</button>
+                    <button class="option-btn" data-answer="alto">Alto</button>
+                </div>
+            </div>
+
+            <div id="results-section" class="hidden">
+                <h3>Análisis del Caso: Riesgo ALTO</h3>
+                <p><strong>¡Correcto!</strong> El riesgo es alto principalmente por ser una Persona Políticamente Expuesta (PEP). Este es uno de los muchos escenarios que aprenderás a identificar en nuestro curso.</p>
+                <a href="#" id="hotmart-link" class="hotmart-btn">Inscríbete al Curso Completo</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

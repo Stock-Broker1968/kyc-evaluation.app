@@ -1,0 +1,108 @@
+style.css
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#kyc-widget-container {
+    max-width: 500px;
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+h2, h3 { color: #2c3e50; }
+p { color: #5a6a7a; line-height: 1.6; }
+
+/* --- ESTILOS DEL FORMULARIO --- */
+#lead-form input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    font-size: 16px;
+}
+#lead-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#lead-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Un azul corporativo */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#lead-form button:hover { background-color: #0056b3; }
+#form-status { margin-top: 10px; font-weight: bold; height: 20px; }
+
+/* --- ESTILOS DEL EJERCICIO --- */
+#case-section img {
+    max-width: 110px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+}
+
+#case-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+#case-section li { margin-bottom: 10px; }
+
+.risk-options .option-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 20px; /* Botones más redondeados */
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+.risk-options .option-btn:hover { background-color: #f0f8ff; transform: translateY(-2px); }
+.risk-options .option-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* Botón para Hotmart */
+.hotmart-btn {
+    display: inline-block;
+    width: 80%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f7941e; /* Color oficial de Hotmart */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+.hotmart-btn:hover { background-color: #e6891a; transform: scale(1.05); }
+
+/* Clase mágica para ocultar y mostrar secciones */
+.hidden {
+    display: none;
+}
